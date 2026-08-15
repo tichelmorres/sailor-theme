@@ -4,7 +4,7 @@
 
 ;; Author: Michel Torres <qualquercoisahhhh@gmail.com>
 ;; URL: http://github.com/tichelmorres/sailor-theme
-;; Version: 0.1
+;; Version: 0.2
 
 ;; License:
 
