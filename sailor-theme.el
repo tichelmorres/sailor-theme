@@ -138,11 +138,13 @@
    ;; Dired
    ;; **************************************************************************************************************
 
-   `(dired-header         ((t (:foreground ,sailor-green+1                                 ))))
-   `(dired-directory      ((t (:foreground ,sailor-white                                   ))))
-   `(dired-ignored        ((t (:foreground ,sailor-green  :inherit    unspecified          ))))
-   `(dired-broken-symlink ((t (:foreground ,sailor-white  :background ,sailor-blue :bold t ))))
-   `(dired-marked         ((t (:foreground ,sailor-yellow :inherit    unspecified          ))))
+
+   `(dired-header         ((t (:foreground ,sailor-green+1                                               ))))
+   `(dired-directory      ((t (:foreground ,sailor-white                                                 ))))
+   `(dired-ignored        ((t (:foreground ,sailor-green   :inherit     unspecified                      ))))
+   `(dired-broken-symlink ((t (:foreground ,sailor-white   :background ,sailor-blue :bold    t           ))))
+   `(dired-marked         ((t (:foreground ,sailor-white   :background ,sailor-blue :inherit unspecified ))))
+   `(dired-mark           ((t (:foreground ,sailor-blue    :inherit     unspecified                      ))))
 
    ;; EWW
    ;; **************************************************************************************************************
@@ -158,11 +160,11 @@
    ;; Compilation
    ;; **************************************************************************************************************
 
-   `(compilation-info           ((t (:foreground ,sailor-white           :inherit unspecified ))))
-   `(compilation-warning        ((t (:foreground ,sailor-red     :bold t :inherit unspecified ))))
-   `(compilation-error          ((t (:foreground ,sailor-green+1                              ))))
-   `(compilation-mode-line-fail ((t (:foreground ,sailor-green+1 :bold t :inherit unspecified ))))
-   `(compilation-mode-line-exit ((t (:foreground ,sailor-white   :bold t :inherit unspecified ))))
+   `(compilation-info           ((t (:foreground ,sailor-foreground         :inherit unspecified ))))
+   `(compilation-warning        ((t (:foreground ,sailor-yellow             :inherit unspecified ))))
+   `(compilation-error          ((t (:foreground ,sailor-red                                     ))))
+   `(compilation-mode-line-fail ((t (:foreground ,sailor-background         :inherit unspecified ))))
+   `(compilation-mode-line-exit ((t (:foreground ,sailor-background :bold t :inherit unspecified ))))
 
    ;; Line Numbers
    ;; **************************************************************************************************************
