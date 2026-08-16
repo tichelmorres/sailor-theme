@@ -4,7 +4,7 @@
 
 ;; Author: Michel Torres <qualquercoisahhhh@gmail.com>
 ;; URL: http://github.com/tichelmorres/sailor-theme
-;; Version: 0.2
+;; Version: 1.0
 
 ;; License:
 
@@ -86,10 +86,11 @@
       (sailor-green+1       "#8cde94")
       (sailor-green         "#44b340")
 
+      (sailor-quartz        "#c1d1e3")
+
       (sailor-red+1         "#fa8072")
       (sailor-red           "#ff0000")
 
-      (sailor-yellow        "#ffff00")
       (sailor-white         "#ffffff")
 
       ;; @Newer:  "#062626"
@@ -160,8 +161,8 @@
    ;; Compilation
    ;; **************************************************************************************************************
 
-   `(compilation-info           ((t (:foreground ,sailor-foreground         :inherit unspecified ))))
-   `(compilation-warning        ((t (:foreground ,sailor-yellow             :inherit unspecified ))))
+   `(compilation-info           ((t (:foreground ,sailor-quartz             :inherit unspecified ))))
+   `(compilation-warning        ((t (:foreground ,sailor-blue               :inherit unspecified ))))
    `(compilation-error          ((t (:foreground ,sailor-red                                     ))))
    `(compilation-mode-line-fail ((t (:foreground ,sailor-background         :inherit unspecified ))))
    `(compilation-mode-line-exit ((t (:foreground ,sailor-background :bold t :inherit unspecified ))))
@@ -215,26 +216,26 @@
    ;; Term / Ansi-term
    ;; **************************************************************************************************************
 
-   `(term-color-black   ((t (:foreground ,sailor-background :background ,sailor-background ))))
-   `(term-color-red     ((t (:foreground ,sailor-red+1      :background ,sailor-red+1      ))))
-   `(term-color-green   ((t (:foreground ,sailor-green      :background ,sailor-green      ))))
-   `(term-color-yellow  ((t (:foreground ,sailor-foreground :background ,sailor-foreground ))))
-   `(term-color-blue    ((t (:foreground ,sailor-cyan-1     :background ,sailor-cyan-1     ))))
-   `(term-color-magenta ((t (:foreground ,sailor-green+1    :background ,sailor-green+1    ))))
-   `(term-color-cyan    ((t (:foreground ,sailor-cyan+1     :background ,sailor-cyan+1     ))))
-   `(term-color-white   ((t (:foreground ,sailor-white      :background ,sailor-white      ))))
+   `(term-color-black   ((t (:foreground ,sailor-background ))))
+   `(term-color-red     ((t (:foreground ,sailor-red+1      ))))
+   `(term-color-green   ((t (:foreground ,sailor-green      ))))
+   `(term-color-yellow  ((t (:foreground ,sailor-foreground ))))
+   `(term-color-blue    ((t (:foreground ,sailor-cyan-1     ))))
+   `(term-color-magenta ((t (:foreground ,sailor-quartz     ))))
+   `(term-color-cyan    ((t (:foreground ,sailor-cyan+1     ))))
+   `(term-color-white   ((t (:foreground ,sailor-white      ))))
 
    ;; Vterm
    ;; **************************************************************************************************************
 
-   `(vterm-color-black   ((t (:foreground ,sailor-background :background ,sailor-background ))))
-   `(vterm-color-red     ((t (:foreground ,sailor-red+1      :background ,sailor-red+1      ))))
-   `(vterm-color-green   ((t (:foreground ,sailor-green      :background ,sailor-green      ))))
-   `(vterm-color-yellow  ((t (:foreground ,sailor-foreground :background ,sailor-foreground ))))
-   `(vterm-color-blue    ((t (:foreground ,sailor-cyan-1     :background ,sailor-cyan-1     ))))
-   `(vterm-color-magenta ((t (:foreground ,sailor-green+1    :background ,sailor-green+1    ))))
-   `(vterm-color-cyan    ((t (:foreground ,sailor-cyan+1     :background ,sailor-cyan+1     ))))
-   `(vterm-color-white   ((t (:foreground ,sailor-white      :background ,sailor-white      ))))
+   `(vterm-color-black   ((t (:foreground ,sailor-background ))))
+   `(vterm-color-red     ((t (:foreground ,sailor-red+1      ))))
+   `(vterm-color-green   ((t (:foreground ,sailor-green      ))))
+   `(vterm-color-yellow  ((t (:foreground ,sailor-foreground ))))
+   `(vterm-color-blue    ((t (:foreground ,sailor-cyan-1     ))))
+   `(vterm-color-magenta ((t (:foreground ,sailor-quartz     ))))
+   `(vterm-color-cyan    ((t (:foreground ,sailor-cyan+1     ))))
+   `(vterm-color-white   ((t (:foreground ,sailor-white      ))))
 
    ;; Message
    ;; **************************************************************************************************************
