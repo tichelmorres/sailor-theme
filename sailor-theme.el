@@ -4,7 +4,7 @@
 
 ;; Author: Michel Torres <qualquercoisahhhh@gmail.com>
 ;; URL: http://github.com/tichelmorres/sailor-theme
-;; Version: 1.0
+;; Version: 1.1
 
 ;; License:
 
@@ -70,7 +70,8 @@
 ;    document  some  of the changes I noticed.  The colors with a
 ;    "@Newer"  comment are the ones which changed.  If you prefer
 ;    the  new  theme  over  the old one, copy and paste the newer
-;    colors over the older ones.
+;    colors  over  the  older ones.  Colors indicated with @Older
+;    are used by default.
 
 (deftheme sailor
   "A colorscheme inspired by Jonathan Blow's livestreams.")
@@ -81,6 +82,7 @@
       (sailor-cyan+1        "#00ffff")
       (sailor-cyan          "#2ec09c")
       ;; @Newer:  "#125844"
+      ;; @Older:  "#126367"
       (sailor-cyan-1        "#126367")
 
       (sailor-green+1       "#8cde94")
@@ -94,8 +96,10 @@
       (sailor-white         "#ffffff")
 
       ;; @Newer:  "#062626"
+      ;; @Older:  "#062329"
       (sailor-background    "#062329")
       ;; @Newer:  "#d3b48c"
+      ;; @Older:  "#d1b897"
       (sailor-foreground    "#d1b897")
       )
 
@@ -111,6 +115,7 @@
 
    `(border                      ((t (:background ,sailor-background :foreground ,sailor-white               ))))
    ;; @Newer:  sailor-green+1
+   ;; @Older:  sailor-white
    `(cursor                      ((t (:background ,sailor-white                                              ))))
    `(default                     ((t (:foreground ,sailor-foreground :background ,sailor-background          ))))
    `(fringe                      ((t (:background  unspecified       :foreground ,sailor-white               ))))
@@ -178,6 +183,7 @@
 
    ;; @Newer:  sailor-green+1     this is not actually new, but I recommend changing this color
    ;;                             if you changed the cursor color too.
+   ;; @Older:  sailor-white
    `(line-number-current-line ((t (:inherit            line-number :foreground    ,sailor-white
                                    :distant-foreground unspecified
                                    :weight             bold        :slant          unspecified

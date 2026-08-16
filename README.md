@@ -3,9 +3,17 @@
 An Emacs color theme inspired by Jonathan Blow's livestreams.
 Check it out: [j_blow](https://www.twitch.tv/j_blow).
 
-## Screenshot
+## Screenshots
 
-![sailor-theme](https://i.imgur.com/6tliJjL.png)
+Original theme:
+
+![old-sailor-theme](https://i.imgur.com/6tliJjL.png)
+
+Newer variant (currently used by JBlow):
+
+![new-sailor-theme](https://i.imgur.com/4iGdipJ.png)
+
+> *For details on how to achieve the newer variant, check [the source code](./sailor-theme.el).*
 
 ## Installation
 
