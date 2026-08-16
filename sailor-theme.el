@@ -4,7 +4,7 @@
 
 ;; Author: Michel Torres <qualquercoisahhhh@gmail.com>
 ;; URL: http://github.com/tichelmorres/sailor-theme
-;; Version: 1.1
+;; Version: 2.0
 
 ;; License:
 
@@ -73,6 +73,8 @@
 ;    colors  over  the  older ones.  Colors indicated with @Older
 ;    are used by default.
 
+;; Code:
+
 (deftheme sailor
   "A colorscheme inspired by Jonathan Blow's livestreams.")
 
@@ -83,24 +85,32 @@
       (sailor-cyan          "#2ec09c")
       ;; @Newer:  "#125844"
       ;; @Older:  "#126367"
-      (sailor-cyan-1        "#126367")
+      (sailor-cyan-1        "#125844")
 
-      (sailor-green+1       "#8cde94")
+      (sailor-gray          "#cccccc")
+      (sailor-gray-1        "#424242")
+
+      ;; @Newer:  "#95ea9a"
+      ;; @Older:  "#8cde94"
+      (sailor-green+1       "#95ea9a")
       (sailor-green         "#44b340")
 
       (sailor-quartz        "#c1d1e3")
+      (sailor-quartz-1      "#668786")
 
-      (sailor-red+1         "#fa8072")
+      ;; @Newer:  "#ec7a9b"
+      ;; @Older:  "#fa8072"
+      (sailor-red+1         "#ec7a9b")
       (sailor-red           "#ff0000")
 
       (sailor-white         "#ffffff")
 
       ;; @Newer:  "#062626"
       ;; @Older:  "#062329"
-      (sailor-background    "#062329")
+      (sailor-background    "#062626")
       ;; @Newer:  "#d3b48c"
       ;; @Older:  "#d1b897"
-      (sailor-foreground    "#d1b897")
+      (sailor-foreground    "#d3b48c")
       )
 
   (custom-theme-set-variables
@@ -138,12 +148,14 @@
    ;; **************************************************************************************************************
 
    `(mode-line           ((t (:background ,sailor-foreground :foreground ,sailor-background         ))))
-   `(mode-line-buffer-id ((t (:background ,sailor-foreground :foreground ,sailor-background :bold t ))))
-   `(mode-line-inactive  ((t (:background ,sailor-foreground :foreground ,sailor-background         ))))
+   ;; @Newer: sailor-gray, sailor-gray-1
+   ;; @Older: sailor-foreground, sailor-background
+   `(mode-line-inactive  ((t (:background ,sailor-gray       :foreground ,sailor-gray-1             ))))
+
+   `(mode-line-buffer-id ((t (:bold t ))))
 
    ;; Dired
    ;; **************************************************************************************************************
-
 
    `(dired-header         ((t (:foreground ,sailor-green+1                                               ))))
    `(dired-directory      ((t (:foreground ,sailor-white                                                 ))))
@@ -181,9 +193,6 @@
                                    :underline          unspecified :strike-through unspecified
                                    ))))
 
-   ;; @Newer:  sailor-green+1     this is not actually new, but I recommend changing this color
-   ;;                             if you changed the cursor color too.
-   ;; @Older:  sailor-white
    `(line-number-current-line ((t (:inherit            line-number :foreground    ,sailor-white
                                    :distant-foreground unspecified
                                    :weight             bold        :slant          unspecified
@@ -193,9 +202,9 @@
    ;; Search
    ;; **************************************************************************************************************
 
-   `(isearch                     ((t (:foreground ,sailor-white      :background ,sailor-blue   ))))
-   `(isearch-fail                ((t (:foreground ,sailor-white      :background ,sailor-red    ))))
-   `(isearch-lazy-highlight-face ((t (:foreground ,sailor-foreground :background ,sailor-cyan-1 ))))
+   `(isearch        ((t (:foreground ,sailor-background :background ,sailor-red+1      ))))
+   `(isearch-fail   ((t (:foreground ,sailor-foreground :background ,sailor-background ))))
+   `(lazy-highlight ((t (:background ,sailor-quartz-1 ))))
 
    ;; Show Paren
    ;; **************************************************************************************************************
